@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Basilisk</title>
+    <meta name="viewport" content="user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="left">
+        <h1>Basilisk</h1>
+        <table id="data-table">
+            <tr>
+                <th>Name</th>
+                <th>Infrared</th>
+                <th>Radio</th>
+                <th>Magnetic</th>
+            </tr>
+        </table>
+        <p>
+            <button class="curved-button" id="upload-button">Upload</button>
+            <button class="curved-button" id="delete-button">Delete</button>
+        </p>
+    </div>
+    <div id="right">
+        <p>
+            X: <span id="x_coordinate">0</span>
+            Y: <span id="y_coordinate">0</span>
+            Angle: <span id="angle">0</span>&deg
+        </p>
+        <p>
+            Motor State: <span id="motor_state"> Off</span>
+            <span style="margin-left: 20px;">Speed: <span id="speed">0</span></span>
+        </p>
+        <canvas id="canvas" name="game"></canvas>
+        <p>
+            Name: <span id="ultrasound"> - </span>
+            Infrared: <span id="infrared_wave"> - </span>
+            Radio: <span id="radio_wave"> - </span>
+            Magnetic: <span id="magnetic_field"> - </span>
+        </p>
+        <p>
+            <button class="curved-button" id="ultrasound-button">Ultrasound</button>
+            <button class="curved-button" id="infrared-button">Infrared</button>
+            <button class="curved-button" id="radio-button">Radio</button>
+            <button class="curved-button" id="magnet-button">Magnetic</button>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
